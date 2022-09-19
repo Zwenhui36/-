@@ -1,0 +1,304 @@
+/* pages/knowledge/knowledge.wxss */
+/* 可移动的导航栏 */
+.fix_btn {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  z-index: 10;
+}
+/* 弹幕 */
+.weui-input1 {
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+  margin-left: 15rpx;
+}
+
+.icon1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/*  */
+.bg{
+    height: 50px;
+    color: #3cb8e9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav{
+    width: 70%;
+    height: 40px;
+  }
+  .add{
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    margin-left:10px;
+    margin-bottom: 10px;
+    font-size: 45px; 
+  }
+  .scroll-view_H{
+    margin-left: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+  }
+  .normal{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .select{
+     width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding-left:20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .line{
+    height: 10px;
+    background-color: #F2F2F2;
+  }
+  .item{
+    margin: 10px;
+  }
+  .head{
+    display: flex;
+    flex-direction: row;
+    height: 77px;
+    align-items: center;
+  }
+  .title{
+    width: 60%;
+    margin-left:10px;
+    font-weight: bold; 
+  }
+  .hot{
+    text-align: right;
+    width: 30%;
+    margin-right: 28rpx;
+  }
+  .content{
+    padding: 10px;
+    line-height: 25px;
+  }
+  .sta{
+    padding: 10px;
+    color: #999999;
+    font-size: 16px;
+  }
+  .icon{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .icon view{
+     margin: 0 auto;
+     width: 25%;
+  }
+  .last{
+    text-align: right;
+  }
+  .section{
+    text-align: center;
+  }
+
+/* 视频 */
+/* pages/shipin/shipin.wxss */
+@import "../common/lib/weui.wxss";
+.weui-cells{
+    margin-top: 80rpx;
+    text-align: left;
+}
+.weui-label{
+    width: 5em;
+}
+page{
+    background-color: #F8F8F8;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+.page-body{
+    padding: 20rpx 0;
+}
+.btn-area{
+  margin-top: 50rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 90rpx;
+}
+.tc{
+    text-align: center;
+}
+  /* 图片瀑布流 */
+  page {
+    padding: 10rpx;
+  }
+  
+  .content {
+    text-align: justify;
+  }
+  
+  .item {
+    background-color: #fff;
+    margin: 10rpx 3%;
+    margin-bottom: 20rpx;
+    display: inline-block;
+    width: 96%;
+    border-radius: 20rpx;
+    overflow: hidden;
+  }
+  
+  .item-ava {
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 20rpx;
+  }
+  
+  .heart {
+    width: 30rpx;
+    height: 26rpx;
+    margin-right: 8rpx;
+  }
+  
+  .heart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-img {
+    width: 100%
+  }
+  
+  .item-title {
+    font-size: 24rpx;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    color: #1e1e1e;
+    margin: 15rpx;
+    line-height: 27rpx;
+  }
+  
+  .item .name {
+    display: flex;
+    padding: 0 15rpx;
+    margin-top: 20rpx;
+    padding-bottom: 10rpx;
+    align-items: center;
+    font-size: 22rpx;
+    color: #1e1e1e;
+  }
+  
+  .name image {
+    flex: 0 0 auto;
+  }
+  
+  .item-title-box {
+    display: flex;
+    position: relative;
+  }
+  
+  .name-title {
+    flex: 1;
+    margin-left: 18rpx;
+    margin-right: 20rpx;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+  
+  .name text:last-child {
+    color: #c4c4c4;
+    text-decoration: underline;
+    line-height: 10rpx;
+  
+  }
+  
+  .left,
+  .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+
+/* 文字 */
+.wrapper {
+  display: flex;
+  margin: 50rpx auto;
+  width: 600rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+  padding: 15rpx;
+  box-shadow: 20rpx 20rpx 60rpx #bebebe,
+    -20rpx -20rpx 60rpx #ffffff;
+}
+.text {
+  font-size: 28rpx;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  text-overflow: ellipsis;
+  text-align: justify;
+  position: relative;
+  line-height: 40rpx;
+  max-height: 160rpx;
+}
+
+.text::before {
+  content: '';
+  height: calc(100% - 23px);
+  float: right;
+}
+
+.btn {
+  position: relative;
+  float: right;
+  clear: both;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  padding: 0 15rpx;
+  background: #50bbfa;
+  line-height: 42rpx;
+  border-radius: 4rpx;
+  height: 42rpx;
+  color: #fff;
+}
+
+.btn::before {
+  content: '...';
+  position: absolute;
+  left: -5rpx;
+  color: rgb(32, 32, 32);
+  transform: translateX(-100%)
+}
+
+.btn::after {
+  content: '展开'
+}
+
+.ative {
+  max-height: none;
+}
+
+.ative_label::after {
+  content: '收起'
+}
+
+.ative_label::before {
+  /*在展开状态下隐藏省略号*/
+  visibility: hidden;
+}

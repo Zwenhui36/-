@@ -1,0 +1,37 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1 title">糖友喝粥，不妨加点儿粗粮和蔬菜~</view>
+            <view class="weui-article__title">2022-5-24 12:00<text space="ensp">    阅读量：23246</text></view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                        <image class="weui-article__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/xinwen3.png?sign=352a403ee25e1c16dfd033df6810ca8c&t=1653370088"  />
+                    <view class="weui-article__p">
+                        <text space="ensp">    喝粥会使血糖升高速度加快，因此很多糖友不敢喝粥。但其实，糖友并非不可以喝粥，具体要看喝什么样的粥、怎么喝。</text>
+                    <view></view>
+                    <text space="ensp">  1. 增加粗粮</text>
+                    <view></view>
+                    <text space="ensp">  精米煮的粥中蛋白质含量低、膳食纤维非常少，喝完后血糖会很快升高。因此，煮粥时应增加富含膳食纤维且未经打磨的粗粮，比如荞麦、小米、燕麦麦麸、豆类、燕麦、玉米等，减少喝粥对血糖的影响。</text>
+                    <view></view>
+                    <text space="ensp">  2. 增加蔬菜</text>
+                    <view></view>
+                    <text space="ensp">芹菜、菠菜、芥蓝、莴笋叶、空心菜、苋菜等蔬菜中富含膳食纤维、维生素、矿物质，均有助于预防高血压、高血脂，亦利于控制餐后血糖。增加粥中的蔬菜量，可以减少粥中主食总量，进而减少糖的摄入量。</text>
+                    <view></view>
+                    <text space="ensp">  3. 不空腹喝粥</text>
+                    <view></view>
+                    <text space="ensp">  糖友在喝粥前应当吃些东西，比如馒头、新鲜蔬菜等。这样可以减缓糖的吸收，减少血糖波动。</text>
+                    <view></view>
+                    
+                    </view>
+                    
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="../index/index"  open-type="switchTab"class="weui-footer__link" >首页</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 wenhui.zheng</view>
+        </view>
+</view>

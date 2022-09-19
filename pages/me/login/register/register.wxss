@@ -1,0 +1,147 @@
+/* pages/register/register.wxss */
+
+.content{
+    width: 100%;
+    height: 700px;
+    background-color: #f2f2f2;
+}
+.hr{
+    padding-top: 40px;
+}
+.shoujitxt{
+    font-size:15px;
+    margin-left: 30rpx;
+}
+.yzmtxt{
+    font-size:15px;
+}
+.item{
+    margin:0 auto;
+    border: 1px solid #cccccc;
+    height: 40px;
+    width: 90%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+.item input{
+    height: 40px;
+    line-height: 40px;
+    margin-left:10px;
+}
+.flex input{
+    width: 300px;
+}
+.item switch{
+    margin-top:5px;
+    margin-right:5px;
+}
+.holder{
+    font-size:14px;
+    color:#999999;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.gender{
+    margin:0 auto;
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    color:#999999;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+    font-size: 35rpx;
+}
+.birthday{
+    margin:0 auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    color:#999999;
+}
+.picker{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+    font-size: 35rpx;
+}
+.attention{
+    margin:0 auto;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    color:#999999;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+    font-size: 35rpx;
+}
+.mobileInfo{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 15px;
+    margin-left: 35rpx;
+    border: 0.1px solid #d3d3d3;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+.mobile{
+    margin: 0 auto;
+    border: 1px solid #cccccc;
+    height: 40px;
+    width: 80%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+.mobile input{
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.code{
+    height: 40px;
+    text-align: center;
+    color: #999999;
+    font-size: 15px;
+    margin-right: 5%;
+}
+.btn{
+    width: 90%;
+    color: #999999;
+    margin-top: 40px;
+}
+.xieyi{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+.agree{
+    margin-left: 5px;
+    color: #666666;
+}
+.opinion{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,95 @@
+<!--pages/index/guahao/biaoge/biaoge.wxml-->
+<view class="all">
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="hr"></view>
+    <view class="biaoge">
+        <view class="title">
+            <text decode class="xing">*&nbsp;</text>
+            <view class="txt">姓名</view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input weui-cell_vcode kuang">
+            <view class="weui-cell__bd bingqingtxt">
+            <input class="weui-input num1" auto-focus  name="phoneNumber" placeholder="请输入患者名字" />
+            </view>
+        </view>
+        </view>
+        <view class="hr"></view>
+        <!-- 电话 -->
+        <view class="title">
+            <text decode class="xing">*&nbsp;</text>
+            <view class="txt">联系方式</view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input weui-cell_vcode kuang">
+            <view class="weui-cell__bd ">
+            <input class="weui-input num1" type="number" bindblur="savePhoneNumber" name="phoneNumber" maxlength="11" placeholder="请输入手机号" />
+            </view>
+        </view>
+        </view>
+        <view class="hr"></view>
+        <!-- 电话 -->
+        <view class="title">
+            <text decode class="xing">*&nbsp;</text>
+            <view class="txt">日期</view>
+        </view>
+        <view class="weui-cell weui-cell_input data">
+                
+                <view class="weui-cell__bd datashuju">
+                    <picker mode="date" value="{{date}}" start="2022-05-01" end="2024-09-01" bindchange="bindDateChange" class="num1">
+                        <view class="weui-input">{{date}}</view>
+                    </picker>
+                </view>
+                <view class="weui-cell__hd">
+                    <image src="/images/doctor/上下展开.png" class="jiantou"/>
+                </view>
+            </view>
+        <view class="hr"></view>
+        <!-- 科室 -->
+        <view class="title">
+            <text decode class="xing">*&nbsp;</text>
+            <view class="txt">科室</view>
+        </view>
+        <view class="cell_2 checkbox" wx:for="{{radioList}}">
+        <view class="checkbox_group">
+            <view class="checkbox_icon checkbox_1 " bindtap="radioChange" data-index="{{index}}" wx:if="{{activeIndex!=index}}"></view>
+            <view class="checkbox_icon checkbox_1_selected" bindtap="radioChange" wx:if="{{activeIndex==index}}" data-index="{{index}}"></view>
+        </view>
+        <view class="checkbox_content">{{item.text}}</view>
+        </view>
+        <view class="hr"></view>
+        <!-- 主治医师 -->
+        <view class="title">
+            <text decode class="xing">*&nbsp;</text>
+            <view class="txt">主治医生</view>
+        </view>
+        <view class="cell_2 checkbox" wx:for="{{radioList1}}">
+        <view class="checkbox_group">
+            <view class="checkbox_icon checkbox_1" bindtap="radioChange1" data-index="{{index}}" wx:if="{{activeIndex1!=index}}"></view>
+            <view class="checkbox_icon checkbox_1_selected" bindtap="radioChange1" wx:if="{{activeIndex1==index}}" data-index="{{index}}"></view>
+        </view>
+        <view class="checkbox_content">{{item.text}}</view>
+        </view>
+        <view class="hr"></view>
+        <!-- 病情概况 -->
+        <view class="title">
+            <text decode class="xing">*&nbsp;</text>
+            <view class="txt">病情概况</view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cells weui-cells_after-title kuang">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea num1" placeholder="病情概况" style="height: 3.3em" />
+                    <view class="weui-textarea-counter num1">0/200</view>
+                </view>
+            </view>
+        </view>
+        </view>
+        <view class="hr"></view>
+        <!-- 提交按钮 -->
+        <button class="weui-btn" size="default" type="default" plain="true" form-type="submit" bindtap="subbtn">预约</button>
+    </view>
+
+</form>
+</view>

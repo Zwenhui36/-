@@ -1,0 +1,118 @@
+<!--pages/community/community.wxml-->
+<!-- 导航栏 -->
+<view class="fix_btn" bindtap="btnAction" catchtouchmove="buttonMove" bindtouchstart="buttonStart" bindtouchend="buttonEnd" style="top:{{buttonTop}}px;left:{{buttonLeft}}px;">
+  <image class="icon1" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/tab/%E9%A6%96%E9%A1%B5.png?sign=722f3b5e4f434260dd72bac52705e7b1&t=1653650177" bindtap="moveindex"></image>
+</view>
+<view class="bg">
+   <view class="nav">
+       <scroll-view class="scroll-view_H" scroll-x="true" >
+       <view class="scroll-view_H">
+          <view><view class="{{flag==0?'select':'normal'}}" id="0" bindtap="switchNav">推荐</view></view>
+          <view><view class="{{flag==1?'select':'normal'}}" id="1" bindtap="switchNav">视频</view></view>
+          <view><view class="{{flag==2?'select':'normal'}}" id="2" bindtap="switchNav">图片</view></view>
+          <view><view class="{{flag==3?'select':'normal'}}" id="3" bindtap="switchNav">文字</view></view>
+       </view>
+  </scroll-view>
+   </view>
+   <view class="add"><text bindtap="showActionSheet">+</text></view>
+</view>
+<view class="line"></view>
+<swiper current="{{currentTab}}"style="height:1500px">
+  <swiper-item>
+   
+      <include src="vip.wxml"/>
+  </swiper-item>
+  <swiper-item>
+    <view class="line"></view>
+      <!--pages/shipin/shipin.wxml-->
+        <view class="page-body">
+            <view class="page-section tc">
+                <video id="myVideo" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E7%A4%BE%E5%8C%BA%E7%B4%A0%E6%9D%90/movie.mp4?sign=0084de18c9d6326cde2daa6c1d752465&t=1653121102" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+                <view class="weui-cells">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__hd">
+                            <view class="weui-label">弹幕内容</view>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input bindblur="bindInputBlur" class="weui-input1" type="text" placeholder="在此处输入弹幕内容" />
+                            
+                        </view>
+                        
+                    </view>
+                </view> 
+                <view class="btn-area">
+                    <button bindtap="bindSendDanmu" class="page-body-button" type="default" formType="submit" plain="true" size="mini">发送弹幕</button>
+                </view>
+            </view>
+        </view>
+            
+  </swiper-item>
+  <!-- 图片 -->
+  <swiper-item>
+    <view class="line"></view>
+        <view class="content">
+            <view class="left">
+                <block wx:for="{{list}}" wx:key="index">
+                <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+                </block>
+            </view>
+            <view class="right">
+                <block wx:for="{{list}}" wx:key="index">
+                <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+                </block>
+            </view>
+        </view>
+        <template name="item">
+            <view class="item">
+                <image class="item-img" src="{{url}}" mode="widthFix"></image>
+                <view class="item-title-box">
+                <navigator url="url" class="item-title">{{title}}</navigator>
+                </view>
+                <view class="name">
+                <image class="item-ava" src="{{avatar}}"></image>
+                <text class="name-title">{{name}}</text>
+                <view class="heart">
+                    <text>{{num}}</text>
+                </view>
+                </view>
+            </view>
+        </template>
+  </swiper-item>
+  <!-- 文字 -->
+  <swiper-item>
+    <view class="line"></view>
+    <view class="wrapper">
+    <view class="text {{value?'ative':''}}">
+        <label class="btn {{value?'ative_label':''}}" bindtap="checkboxChange"></label>
+        3月24日晚，江西省南昌市首个方舱医院将正式投入使用。当日下午，中新社记者探访了位于江西省南昌市新建区欣悦湖体育馆内的欣悦湖方舱医院。整个方舱医院是在场馆原有的基础上进行改造，总占地面积1.1万平方米，改造共分为两层，一层为医护功能区，二层为病人收治区，共设计舱位36个，床位435张，主要用于接收新建区无症状感染者医学隔离观察。截至目前，该方舱医院已完成全部设备的安装调试工作，医疗团队和志愿服务团队已开始进驻。
+    </view>
+    </view>
+    <view class="wrapper">
+    <view class="text {{value?'ative':''}}">
+        <label class="btn {{value?'ative_label':''}}" bindtap="checkboxChange"></label>
+        3月24日晚，江西省南昌市首个方舱医院将正式投入使用。当日下午，中新社记者探访了位于江西省南昌市新建区欣悦湖体育馆内的欣悦湖方舱医院。整个方舱医院是在场馆原有的基础上进行改造，总占地面积1.1万平方米，改造共分为两层，一层为医护功能区，二层为病人收治区，共设计舱位36个，床位435张，主要用于接收新建区无症状感染者医学隔离观察。截至目前，该方舱医院已完成全部设备的安装调试工作，医疗团队和志愿服务团队已开始进驻。
+    </view>
+    </view>
+    <view class="wrapper">
+    <view class="text {{value?'ative':''}}">
+        <label class="btn {{value?'ative_label':''}}" bindtap="checkboxChange"></label>
+        3月24日晚，江西省南昌市首个方舱医院将正式投入使用。当日下午，中新社记者探访了位于江西省南昌市新建区欣悦湖体育馆内的欣悦湖方舱医院。整个方舱医院是在场馆原有的基础上进行改造，总占地面积1.1万平方米，改造共分为两层，一层为医护功能区，二层为病人收治区，共设计舱位36个，床位435张，主要用于接收新建区无症状感染者医学隔离观察。截至目前，该方舱医院已完成全部设备的安装调试工作，医疗团队和志愿服务团队已开始进驻。
+    </view>
+    </view>
+    <view class="wrapper">
+    <view class="text {{value?'ative':''}}">
+        <label class="btn {{value?'ative_label':''}}" bindtap="checkboxChange"></label>
+        3月24日晚，江西省南昌市首个方舱医院将正式投入使用。当日下午，中新社记者探访了位于江西省南昌市新建区欣悦湖体育馆内的欣悦湖方舱医院。整个方舱医院是在场馆原有的基础上进行改造，总占地面积1.1万平方米，改造共分为两层，一层为医护功能区，二层为病人收治区，共设计舱位36个，床位435张，主要用于接收新建区无症状感染者医学隔离观察。截至目前，该方舱医院已完成全部设备的安装调试工作，医疗团队和志愿服务团队已开始进驻。
+    </view>
+    </view>
+    <view class="wrapper">
+    <view class="text {{value?'ative':''}}">
+        <label class="btn {{value?'ative_label':''}}" bindtap="checkboxChange"></label>
+        3月24日晚，江西省南昌市首个方舱医院将正式投入使用。当日下午，中新社记者探访了位于江西省南昌市新建区欣悦湖体育馆内的欣悦湖方舱医院。整个方舱医院是在场馆原有的基础上进行改造，总占地面积1.1万平方米，改造共分为两层，一层为医护功能区，二层为病人收治区，共设计舱位36个，床位435张，主要用于接收新建区无症状感染者医学隔离观察。截至目前，该方舱医院已完成全部设备的安装调试工作，医疗团队和志愿服务团队已开始进驻。
+    </view>
+    </view>
+  </swiper-item>
+</swiper>
+<view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 2008-2016 wenhui.zheng</view>
+        </view>

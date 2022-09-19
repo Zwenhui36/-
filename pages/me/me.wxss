@@ -1,0 +1,111 @@
+
+.amountBg{
+    height:100px;
+    background-color: #1296db; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img{
+    margin-left: 20px;
+}
+/**index.wxss**/
+.yonghu{
+    margin-left: -180rpx;
+}
+.cont {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+}
+
+.img {
+    position: relative;
+    top: 10%;
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+    margin-right: -170rpx;
+}
+
+.btn_getuserinfo {
+    width: 80%;
+    height: 100rpx;
+    border: 0rpx;
+    font-weight: bold;
+    margin-top: 50rpx;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.nav{
+   width:15px;
+   color: #ffffff;
+   margin-right: 20rpx;
+   margin-left: 150rpx;
+}
+.content{
+    background-color: #F4F4F4;
+    height: 500px;
+}
+.order{
+    width: 94%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top:90px;
+    margin-left: 3%;
+}
+.desc{
+    width: 25%;
+    font-size: 13px;
+    margin-left: 5%;
+}
+.clear{
+    padding-top: 70px;
+}
+.item{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    text-align: center;
+}
+.itemName{
+    width: 40%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.line{
+    height: 10px;
+    background-color: #F4F4F4;
+}
+.hr{
+    height: 1px;
+    background-color: #cccccc;
+    opacity: 0.2;
+}
+.remark{
+    font-weight: normal;
+    margin-top:5px;
+}
+.right{
+    width: 40%;
+    text-align: right;
+}
+.opr{
+    color: #e7a9c3;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+

@@ -1,0 +1,156 @@
+<!--pages/cssCase/cardTrans/index.wxml-->
+<view class="card">
+  <view class="t_box">
+    <view class="top">
+      <view class="title">
+        <span></span>
+        <text>爸爸</text>
+        <span></span>
+      </view>
+      <view class="tips">
+        <view><image src="/images/me/avatar01.png" class="touxiang"/></view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="b_box">
+    <view class="content">
+  <view class="item">
+    <view>
+      <image src="/images/me/编辑.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>姓名：戴慕白</view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        性别：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-12-31" bindchange="bindDateChange" >
+       出生年份：{{date}}
+    </picker>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>最高学历：本科</view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>工作年限：3年</view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>手机号：13811112222</view>
+  </view>
+  <view class="line"></view>
+    <view class="item">
+    <view>
+      <image src="/images/me/编辑.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>所在城市：北京</view>
+  </view>
+  <view class="line"></view>
+  <view class="line"></view>
+</view>
+  </view>
+</view>
+
+<!-- new -->
+<view class="card">
+  <view class="t_box">
+    <view class="top">
+      <view class="title1">
+        <span></span>
+        <text>妈妈</text>
+        <span></span>
+      </view>
+      <view class="tips">
+        <rich-text nodes="{{activity.b_rules}}">
+        </rich-text>
+        <view><image src="/images/me/avatar39.png" class="touxiang"/></view>
+      </view>
+      
+    </view>
+  </view>
+  <view class="b_box">
+    <view class="content">
+  <view class="item">
+    <view>
+      <image src="/images/me/编辑1.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>姓名：刘芳</view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑1.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+      <view class="picker">
+        性别：{{array1[index1]}}
+      </view>
+    </picker>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑1.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-12-31" bindchange="bindDateChange" >
+       出生年份：{{date}}
+    </picker>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑1.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>最高学历：本科</view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑1.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>工作年限：8年</view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+    <view>
+      <image src="/images/me/编辑1.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>手机号：13811112222</view>
+  </view>
+  <view class="line"></view>
+    <view class="item">
+    <view>
+      <image src="/images/me/编辑1.png" style="width:21px;height:21px;margin-right:10px;"></image>
+    </view>
+    <view>所在城市：北京</view>
+  </view>
+  <view class="line"></view>
+    
+  <view class="line"></view>
+</view>
+  </view>
+</view>

@@ -1,0 +1,80 @@
+<!--pages/wxCase/showAction/index.wxml-->
+<view class="head">
+  <view class="head_search flex-row">
+    <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/search_icon.png?sign=bd10368639ec56fc8ca7dbcd4c60e5b4&t=1653651972" class="head_s_icon"></image>
+    <input placeholder="搜索" placeholder-class="p_class" class="head_ipt" />
+  </view>
+  <view class="flex-row j_a head_sel">
+    <picker bindchange="change"  data-checked="picker_chose1"data-type="storeList" data-value="store" value="{{store}}" range="{{storeList}}" range-key="name">
+      <view class="flex-row j_c">
+        <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E5%9F%8E%E5%B8%82.png?sign=d573a2fc9be188a468367a59355a28e9&t=1653651992" class="tubiao"></image>
+        <tetx class="text_ellipsis">{{store}}</tetx>
+        <image src="{{picker_chose1?'https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/open_up.png?sign=03a84651f232d250ac2cda2cb28670fa&t=1653652014':'https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/clolse_down.png?sign=6c79b05ce00ff5c57bde3e348aedb09f&t=1653652027'}}" class="arrow"></image>
+      </view>
+    </picker>
+    <picker bindchange="change"  data-checked="picker_chose2" data-type="themeList" data-value="theme" value="{{theme}}" range="{{themeList}}" range-key="name">
+      <view class="flex-row j_c">
+        <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E7%A7%91%E5%AE%A4.png?sign=b39d58ab44fc8272ca4ea1114e6bf416&t=1653652075" class="tubiao"></image>
+        <tetx class="text_ellipsis">{{theme}}</tetx>
+        <image src="{{picker_chose2?'https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/open_up.png?sign=03a84651f232d250ac2cda2cb28670fa&t=1653652014':'https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/clolse_down.png?sign=6c79b05ce00ff5c57bde3e348aedb09f&t=1653652027'}}" class="arrow"></image>
+      </view>
+    </picker>
+    <picker bindchange="change"data-checked="picker_chose3" data-type="statusList" data-value="status" value="{{status}}" range="{{statusList}}" range-key="name">
+      <view class="flex-row j_c">
+        <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E5%8C%BB%E7%94%9F.png?sign=e84297ff885e37a854762e557440766b&t=1653652160" class="tubiao"></image>
+        <tetx class="text_ellipsis">{{status}}</tetx>
+        <image src="{{picker_chose3?'https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/open_up.png?sign=03a84651f232d250ac2cda2cb28670fa&t=1653652014':'https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/clolse_down.png?sign=6c79b05ce00ff5c57bde3e348aedb09f&t=1653652027'}}" class="arrow"></image>
+      </view>
+    </picker>
+  </view>
+  <view class="flex-row j_b">
+    <picker bindchange="change" data-type="dateList" data-value="date" value="{{date}}" range="{{dateList}}" range-key="name">
+      <view class="flex-row head_date">
+        <text>{{date}}</text>
+        <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/down_icon.png?sign=8f01809f914a53dd513dd6b7fc114e3e&t=1653652174" class="down_year"></image>
+      </view>
+    </picker>
+    <view class="head_ac" catchtap="showAction">{{show_action?'取消':'管理'}}</view>
+  </view>
+</view>
+<view class="con">
+  <!-- 有数据 -->
+  <block wx:if="{{hasData}}">
+    <checkbox-group bindchange="actionChange">
+      <block wx:for="{{list}}" wx:key="list">
+        <label>
+          <view class="flex-row allc_item" >
+            <checkbox value="{{item.value}}" disabled="{{item.disabled}}" checked="{{item.checked}}" wx:if="{{show_action}}" class="quan"/>
+            <view class="c_item flex" bindtap="tianxie">
+              <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/star-o.png?sign=e13dfa55cc5ac7e1598788526d3f597d&t=1653652188" class="act_icon"></image>
+              <view>
+                <view class="item_title">科室预约</view>
+                <view class="item_date">开始时间：2012.11.20 15:27</view>
+                <view class="flex-row j_b item_theme">
+                  <text class="text_ellipsis theme_text">科室：普内科预约</text>
+                  <text class="people">当前剩余预约人数：20</text>
+                </view>
+                <view>已报名参与名额：111</view>
+              </view>
+              <!-- 状态 -->
+              <view class="status {{item.status==0?'ing':'over'}}">{{item.status==0?'进行中':'已超时'}}</view>
+            </view>
+          </view>
+        </label>
+      </block>
+    </checkbox-group>
+  </block>
+  <!-- 无数据 -->
+  <block wx:else>
+  </block>
+</view>
+
+<!-- 底部按钮 -->
+<view class="fix_bottom flex-row">
+  <view class="flex-row j_b btn_list">
+    <view class="yixuan">已选{{list_num}}个</view>
+    <view class="flex-row btn12">
+      <view class="btn {{list_num>0?'btn_ative':''}}" bindtap="queding">确定</view>
+    </view>
+  </view>
+</view>

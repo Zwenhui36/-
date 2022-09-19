@@ -1,0 +1,13 @@
+<!--pages/me/aboutus/aboutus.wxml-->
+<!--pages/cssCase/dengpao/index.wxml-->
+
+<view class="con {{off?'off':''}}" catchtap="close">
+  <view class="box {{off?'off':''}}">
+    <view class="box_view {{off?'off':''}}"></view>
+  </view>
+</view>
+
+<CardSwiper data="{{swiperData}}" bindloadmore="loadMore" back="pink"></CardSwiper>
+<view class="bottom">
+  <view class="shadow {{off?'off':''}}"></view>
+</view>

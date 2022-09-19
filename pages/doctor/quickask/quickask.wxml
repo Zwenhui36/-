@@ -1,0 +1,23 @@
+<!--pages/doctor/quickask/quickask.wxml-->
+<view class="container wrap bg">
+    <view class="yonghu">
+    <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E5%AF%BB%E5%8C%BB%E9%97%AE%E8%AF%8A/1.png?sign=c5e5558caff2885971e96e7bd1abf05e&t=1653660865" class="userinfo-avatar"></image>
+    </view>
+    
+  <view class="welcom">welcom to here.</view>
+     <view class="textBox">AI郑医生为您服务</view>
+    <view class="btnBox">
+       
+       
+        <button  bindtap="chatWithMe" size="mini" type="default" plain="true">快来咨询吧</button>
+    </view>
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+        <block wx:key="1" wx:for="{{actionSheetItems}}">
+            <action-sheet-item  wx:key="{{item.name}}" class="item" bindtap="bindItemTap" data-navigator="{{item.linkTo}}">{{item.name}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+    </action-sheet>
+    <!--<view>//开发工具暂不支持map
+        <map longitude="113.324520" latitude="23.099994" markers="{{markers}}" covers="{{covers}}" style="width: 375px; height: 200px;"></map>
+    </view>-->
+</view>

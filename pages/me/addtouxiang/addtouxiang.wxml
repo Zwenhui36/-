@@ -1,0 +1,51 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">头像库</view>
+        <view class="page__desc">添加你的头像库</view>
+    </view>
+    <view class="page__bd xiahuaxian">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd ">
+                    <view class="weui-uploader ">
+                        <view class="weui-uploader__hd">
+                            <view class="weui-uploader__title">图片上传</view>
+                            <view class="weui-uploader__info">{{files.length}}/2</view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for-items="{{files}}" wx:key="{{index}}">
+                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%A4%B4%E5%83%8F%20%E5%A5%B3%E5%AD%A9.png?sign=5ccdf416fba807eae58678d8c08d3e28&t=1653653950" mode="aspectFill" />
+                                </view>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%A4%B4%E5%83%8F%20%E7%94%B7%E5%AD%A9.png?sign=0597d9690d894bee7bc68e853e47f29d&t=1653653965" mode="aspectFill" />
+                                </view>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%A4%B4%E5%83%8F%20%E5%A5%B3%E5%AD%A9%20(1).png?sign=29925eadadd1320b792c83ab16c05526&t=1653653976" mode="aspectFill" />
+                                </view>
+                                <view class="weui-uploader__file weui-uploader__file_status">
+                                    <image class="weui-uploader__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%A4%B4%E5%83%8F%20%E7%94%B7%E5%AD%A9%20(1).png?sign=4cba65d67b3767f1803f788f1ea31ad4&t=1653653984" mode="aspectFill" />
+                                    <view class="weui-uploader__file-content">
+                                        <icon type="warn" size="23" color="#F43530"></icon>
+                                    </view>
+                                </view>
+                                <view class="weui-uploader__file weui-uploader__file_status">
+                                    <image class="weui-uploader__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%A4%B4%E5%83%8F%20%E7%94%B7%E5%AD%A9%20(2).png?sign=4082c0b232efd69f31faf8a247561116&t=1653653994" mode="aspectFill" />
+                                    <view class="weui-uploader__file-content">50%</view>
+                                </view>
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

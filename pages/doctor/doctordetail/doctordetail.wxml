@@ -1,0 +1,50 @@
+<!--pages/doctor/doctordetail/doctordetail.wxml-->
+<view>
+    <view data-text="妇产科" class="title">妇产科</view>
+    <view>
+  <view class="screen screen1">
+    <block wx:for="{{contacts}}" wx:key="id" wx:for-item="contact">
+      <view class="contact" bindtap="showNext" data-idx="{{index}}">
+        <share-element class="avatar" key="avatar" duration="{{duration}}" transform="{{transformIdx === index}}">
+          <image mode="widthFix" src="{{contact.img}}"></image>
+        </share-element>
+        <share-element duration="{{duration}}" class="name" key="name" transform="{{transformIdx === index}}">
+          {{contact.name}}
+        </share-element>
+        
+        <view class="list">
+          <view>科室: {{contact.keshi}}</view>
+          <view>职位：{{contact.zhiwei}}</view>
+          <view>手机号: {{contact.phone}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<page-container show="{{show}}" overlay="{{overlay}}" close-on-slide-down duration="{{duration}}" position="{{position}}" bindbeforeenter="onBeforeEnter" bindenter="onEnter" bindafterenter="onAfterEnter" bindbeforeleave="onBeforeLeave" bindleave="onLeave" bindafterleave="onAfterLeave" bindclickoverlay="onClickOverlay">
+  <view class="screen screen2">
+    <view class="contact">
+      <share-element class="avatar ava_pa" duration="{{duration}}" key="avatar" transform>
+        <image mode="widthFix" src="{{contact.img}}" />
+      </share-element>
+      <share-element class="name" key="name" duration="{{duration}}" transform>
+        {{contact.name}}
+      </share-element>
+      <view class="paragraph {{show ? 'enter' : ''}}">
+        个人介绍：
+        <view></view>
+        1998年毕业于广西医科大学，曾到广西医科大学附属肿瘤医院进修学习、在广西区人民医院学习腹腔镜、宫腔镜微创技术、参加广东省人民医院阴道镜高级医师培训班。有扎实的妇科基本理论和专业知识，对妇科各种疾病的诊治有丰富临床经验，尤其是妇科肿瘤、子宫内膜异位症、妇科内分泌及不孕不育症、子宫脱垂、妇科炎症、女性生殖器官发育异常及损伤性疾病等的诊治。擅长妇科微创手术（腹腔镜、宫腔镜及经阴道手术）及妇科传统开放性各类手术。
+        <view></view>
+        关于妇产科知识普及：
+        <view></view>
+        1.性成熟期是卵巢生殖功能与内分泌功能最旺盛的时期。<view></view>
+        2.孕酮在排卵后7～8日黄体成熟时分泌量达最高峰。<view></view>
+        3.卵巢周期使女性生殖器发生一系列周期性变化，尤以子宫内膜的周期性变化最为显著。
+      </view>
+      <button class="screen2-button" bindtap="showPrev" hidden="{{!show}}" hover-class="none">确定</button>
+    </view>
+  </view>
+</page-container>
+</view>
+
+

@@ -1,0 +1,85 @@
+<!--pages/register/register.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+    <view class="hr"></view>
+    <view class="item">
+        <input type="text" name="loginName" placeholder="请设置4-20位用户名" placeholder-class="holder" bindblur="accountblur" />
+    </view>
+    <view class="item flex">
+        <input type="text" password name="password" placeholder="请设置4-20位登录密码" placeholder-class="holder" />
+        <switch type="switch" checked="{{switchChecked}}" name="switch"/>
+    </view>
+    <view class="item flex">
+        <view class="gender">性别</view>
+        <radio-group class="radio">
+            <radio>男</radio>
+            <radio>女</radio>
+        </radio-group>
+    </view>
+    <view class="item flex">
+        <view class="birthday">出生日期</view>
+        <picker name="picker" class="picker" mode="date" value="{{date}}" start="2000-11-01" end="2022-4-21" bindchange="bindDateChange">{{date}}</picker>
+    </view>
+    <view class="item flex">
+        <view class="attention">注重医院</view>
+        <checkbox-group class="checkbox">
+            <checkbox>位置</checkbox>
+            <checkbox>医生</checkbox>
+            <checkbox>环境</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="mobileInfo">
+    <view class="weui-cells weui-cells_after-title yzm">
+  <view class="weui-cell weui-cell_input weui-cell_vcode">
+    <view class="weui-cell__hd" style="width: 80px ;margin-left:-50rpx">
+                    <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                        <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+                    </picker>
+                </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input shoujitxt" type="number" bindblur="savePhoneNumber" name="phoneNumber" maxlength="11" placeholder="请输入手机号" />
+    </view>
+    <view class="weui-cell__ft">
+      <view class="weui-vcode-btn yzmtxt" bindtap="getValidCode">{{count!=60?count+' s':'获取验证码'}}</view>
+    </view>
+  </view>
+</view></view>
+    
+    <view class="item">
+            <input type="text" name="code" placeholder="短信验证码" placeholder-class="holder"/>
+    </view>
+    <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+        <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" plain="true" form-type="submit" bindtap="zhucebtn">注册</button>
+</view>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

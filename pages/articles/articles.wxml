@@ -1,0 +1,35 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1 title">大姨妈腰痛怎么办？妙招助你赶跑经期腰痛！</view>
+            <view class="weui-article__title">2022-5-24 10:00<text space="ensp">    阅读量：9946</text></view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                        <image class="weui-article__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/xinwen1.png?sign=042f2fa54a272198b2a1841eb85e07e8&t=1653363133"  />
+                    <view class="weui-article__p">
+                        <text space="ensp">    一般经期腰痛是由于子宫位置异常，盆腔炎、盆腔肿瘤、盆腔血症、放环等刺激，压迫神经也引起腰痛;骶棘韧带松弛、腰肌劳损可使腰部支持力增加而疲劳产生腰痛;另外，生育过多、人流过频、性生活过度或外感湿邪等也可产生腰痛。 </text>
+                    <view></view>
+                    <text space="ensp">  1、用手轻揉腰部 千万不要用手去捶，用手在腰上，从上下揉揉即可，切勿用力过猛，轻揉就OK。这个特殊时期，女生本来就身体弱，用力捶容易导致女生受不了，更容易导致经血紊乱，小心炎症哦!因此一定要轻轻揉腰部。</text>
+                    <view></view>
+                    <text space="ensp">  2、热敷关元穴 将右手除大拇指外的其余四指并拢，然后以中指的中间关节为准，这个横向的宽度就是3寸。以它为准，找到肚脐下四指处的关元穴。在热水中滴入几滴薰衣草精油，然后打湿毛巾，稍微拧干后用热毛巾热敷关元穴，待毛巾温度降低后再重新打湿、拧干、热敷，这样反复热敷10分钟。</text>
+                    <view></view>
+                    <text space="ensp">  3、要注意保暖 在冬春寒湿季节，需要做好腰部的保暖。尽量避免淋雨受寒，夜卧当风等。避免久卧潮湿之地，在寒湿季节，可适当使用电热褥祛寒保暖。</text>
+                    <view></view>
+                    <text space="ensp">  4、不宜吃生冷、酸辣、酒类等刺激性食物月经期间是身体娇贵的时候，应该多饮开水，保持大便通畅，减少盆腔充血，注意适当休息和保持充足的睡眠。不宜吃生冷、酸辣、酒类等刺激性食物。</text>
+                    <view></view>
+                    <text space="ensp">  5、热水袋敷小腹实在难受的妹纸，就拿个热水袋，女生之所以腰背酸痛，经血排出不畅有必要关系，为此用热水袋热敷小腹，可以在一定程度上，防止小腹受凉，促进血液流通，减少腰腹痛的机率。</text>
+                    <view></view>
+                    
+                    </view>
+                    
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="../index/index"  open-type="switchTab"class="weui-footer__link" >首页</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 wenhui.zheng</view>
+        </view>
+</view>

@@ -1,0 +1,62 @@
+<!--pages/me/reserve/reserve.wxml-->
+<!--pages/cal2/index.wxml-->
+<view class="calendar">
+  <view class="top_bg">
+    <view class="cale_month flex-row j_b">
+        <view catchtap="toLastMon">
+            <image src="/images/me/de_icon3.png" class="cale_img1"></image>
+        </view>
+        <view class="month">{{months[monthIndex]}}</view>
+        <view catchtap="toNextMon">
+            <image src="/images/me/de_icon2.png" class="cale_img2"></image>
+        </view>
+    </view>
+    <view class="cale_week flex-row j_b ">
+        <block wx:for="{{weekArr}}"  wx:key="*this">
+            <view class="days">{{item}}</view>
+        </block>
+    </view>
+  </view>
+
+  <view class='box1' style='width: {{ sysW * 7 }}rpx'>
+      <block wx:for='{{ arr }}' wx:key="*this">
+        <!-- height: {{ sysW }}rpx; line-height: {{ sysW }}rpx;  {{ index == 0 ? "margin-left:" + sysW * marLet + "rpx;" : "" }}-->
+          <view class="isrela flex-column {{item.chosed?'chosed':''}}"  catchtap="choseOneDay" data-day="{{item.day}}" style='width: {{ sysW }}rpx;margin-left:{{ index==0?sysW * marLet:"" }}rpx;' key="{{item}}">
+            <!-- 图片 -->
+            <view  wx:if="{{item.isbook==1}}" class='book isbook'>
+              <image src="/images/me/wuliu_gou.png" class="book_img"></image>
+            </view>
+
+            <view  wx:if="{{item.isbook==0}}">{{ item.day }}</view>
+
+            <view  wx:if="{{item.isbook==3}}" class='book stopbook'>
+              <image src="/images/me/wuliu_stop.png" class="book_img2"></image>
+            </view>
+            <!-- 文字 -->
+            <view  wx:if="{{item.isbook==1}}"  class="peis_text1">
+              <view>您的预约</view>
+            </view>
+
+            <view  wx:if="{{item.isbook==3}}" class="peis_text1 color2">
+              <view >已被预约</view>
+            </view>
+            
+          </view>
+      </block>
+  </view>
+  <view><text>您的预约进度</text>
+  <view class="box">
+  <view class="pink_pro" style="width:{{progress}}%"></view>
+</view>
+<view class="box btn1" catchtap="prAdd" data-type="0">
+  <view class="pink_pro" style="width:100%;">加速预约++</view>
+</view>
+
+<view class="box btn1" catchtap="prAdd" data-type="1">
+  <view class="pink_pro" style="width:100%;">减速预约--</view>
+</view>
+</view>
+
+
+</view>
+<!--pages/cssCase/progress/index.wxml-->

@@ -1,0 +1,108 @@
+<!--pages/type/type.wxml-->
+<view class="content">
+<view class="line"></view>
+<view class="item">
+   <view class="title">内科</view>
+   <view class="hr"></view>
+   <view class="navs">
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%91%BC%E5%90%B8%E5%86%85%E7%A7%91.png?sign=ddc785a58335d04f64c84c8e50abcc93&t=1653654020" style="width:38px;height:38px;"></image></view>
+         <view>呼吸内科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E6%B6%88%E5%8C%96%E5%86%85%E7%A7%91.png?sign=26f136160d2230cd696c3353fd0a3bba&t=1653654041" style="width:38px;height:38px;"></image></view>
+         <view>消化内科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E7%A5%9E%E7%BB%8F%E5%86%85%E7%A7%91.png?sign=4d1ab720a562fffd327a3c125d1b1ddd&t=1653654053" style="width:38px;height:38px;"></image></view>
+         <view>神经内科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%BF%83%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91.png?sign=7de9744ad81dfeebb948c223a43c2141&t=1653654063" style="width:38px;height:38px;"></image></view>
+         <view>心血管内科</view>
+      </view>
+   </view>
+    <view class="navs">
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E8%82%BE%E5%86%85%E7%A7%91.png?sign=085d24894af1fb438f38d182f7ffd0b1&t=1653654077" style="width:38px;height:38px;"></image></view>
+         <view>肾内科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E8%A1%80%E6%B6%B2%E5%86%85%E7%A7%91.png?sign=dc525b0fa84309b7d981b2c9e37a5efb&t=1653654086" style="width:38px;height:38px;"></image></view>
+         <view>血液内科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%85%8D%E7%96%AB%E5%8A%9B.png?sign=da487e00d91b1eaa2a21c414e89ad784&t=1653654095" style="width:38px;height:38px;"></image></view>
+         <view>免疫科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%86%85%E5%88%86%E6%B3%8C%E7%A7%91.png?sign=c82352cb9cbd180354241e9f67176dfa&t=1653654105" style="width:38px;height:38px;"></image></view>
+         <view>内分泌科</view>
+      </view>
+   </view>
+</view>
+
+<view class="line"></view>
+<view class="item">
+   <view class="title">外科</view>
+   <view class="hr"></view>
+   <view class="navs">
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E6%99%AE%E9%80%9A%E5%A4%96%E7%A7%91.png?sign=21ce09a81656f6bf9792c95f471c8ec5&t=1653654116" style="width:38px;height:38px;"></image></view>
+         <view>普通外科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E7%A5%9E%E7%BB%8F%E5%A4%96%E7%A7%91.png?sign=aa10448b95f4e72b92ef5732c200347f&t=1653654125" style="width:38px;height:38px;"></image></view>
+         <view>神经外科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%BF%83%E8%83%B8%E5%A4%96%E7%A7%91.png?sign=e002cf9ad5d8ae3c05929e213ab42869&t=1653654136" style="width:38px;height:38px;"></image></view>
+         <view>心胸外科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E6%B3%8C%E5%B0%BF%E5%A4%96%E7%A7%91.png?sign=13e9faf929384d8c19de4cd787eb0c51&t=1653654150" style="width:38px;height:38px;"></image></view>
+         <view>泌尿外科</view>
+      </view>
+   </view>
+   <view class="navs">
+    <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%BF%83%E8%A1%80%E7%AE%A1%E5%A4%96%E7%A7%91.png?sign=a5095a5308e31499afbbf767576f39ea&t=1653654163" style="width:38px;height:38px;"></image></view>
+         <view>心血管外科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E4%B9%B3%E8%85%BA%E5%A4%96%E7%A7%91.png?sign=8682705c889eb45030f015a964431533&t=1653654185" style="width:38px;height:38px;"></image></view>
+         <view>乳腺外科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E9%AA%A8%E5%A4%96%E7%A7%91.png?sign=e4f2b97d427c61938cc7dc662aa204b5&t=1653654199" style="width:38px;height:38px;"></image></view>
+         <view>骨外科</view>
+      </view>
+      <view class="nav">
+      </view>
+   </view>
+</view>
+
+<view class="line"></view>
+<view class="item">
+   <view class="title">妇产科</view>
+   <view class="hr"></view>
+   <view class="navs">
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%A6%87%E7%A7%91%20(4).png?sign=65ce72f20f9ce86a3ab1fba14160e834&t=1653654215" style="width:38px;height:38px;"></image></view>
+         <view>妇科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E4%BA%A7%E7%A7%91.png?sign=78e65337d840b9fd05bdb6d26a9d629d&t=1653654222" style="width:38px;height:38px;"></image></view>
+         <view>产科</view>
+      </view>
+      <view class="nav">
+         <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/type/%E5%A6%87%E5%B9%BC%E4%BF%9D%E5%81%A5.png?sign=2fb90a4d9beb2ad91b6b6bd58768f9de&t=1653654234" style="width:38px;height:38px;"></image></view>
+         <view>妇幼保健</view>
+      </view>
+      <view class="nav">
+      </view>
+   </view>
+</view>
+<view class="line"></view>
+
+</view>

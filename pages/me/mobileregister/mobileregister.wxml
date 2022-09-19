@@ -1,0 +1,32 @@
+
+<view class="weui-cells weui-cells_after-title">
+    <view class="hr"></view>
+    <view class="title">请输入手机号</view>
+  <view class="weui-cell weui-cell_input weui-cell_vcode">
+    <view class="weui-cell__hd" style="width: 80px ;margin-left:-50rpx">
+                    <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                        <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+                    </picker>
+                </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input shoujitxt" type="number" bindblur="savePhoneNumber" name="phoneNumber" maxlength="11" placeholder="请输入手机号" />
+    </view>
+    <view class="weui-cell__ft">
+      <view class="weui-vcode-btn" bindtap="getValidCode">{{count!=60?count+' s':'获取验证码'}}</view>
+    </view>
+  </view>
+</view>
+<view>
+  <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+    </view>
+<button class="btn" disabled="{{disabled}}" type="{{btnstate}}" plain="true" bindtap="login">下一步</button>

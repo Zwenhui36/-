@@ -1,0 +1,68 @@
+/* pages/me/map/map.wxss */
+/* pages/map/map.wxss */
+/* pages/another/scrNews/index.wxss */
+  
+.box {
+    width: 702rpx;
+    margin: 10rpx auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .r {
+    white-space: nowrap;
+    animation: 10s loop linear infinite normal;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 26rpx;
+    color: #333;
+  }
+  
+  @keyframes loop {
+    0% {
+      transform: translateX(350px);
+      -webkit-transform: translateX(350px);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+    }
+  }
+  
+  @-webkit-keyframes loop {
+    0% {
+      transform: translateX(300px);
+      -webkit-transform: translateX(300px);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+    }
+  }
+page{
+    background-color: #F8F8F8;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+.page-body{
+    padding: 20rpx 0;
+}
+.btn-area{
+    margin-top: 60rpx;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 30rpx;
+}
+.page-section-gap{
+    box-sizing: border-box;
+    padding: 0 30rpx;
+}
+.page-body-button{
+    margin-bottom: 30rpx;
+}

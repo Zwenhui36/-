@@ -1,0 +1,168 @@
+/* pages/me/reserve/reserve.wxss */
+/* pages/cal2/index.wxss */
+/* calendar 日历*/
+.calendar{
+    margin: 24rpx 24rpx 26rpx 24rpx;
+    width: 700rpx;
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    box-sizing: border-box;
+    /* padding: 25rpx 24rpx 25rpx; */
+  }
+  .top_bg{
+     padding: 25rpx 24rpx 15rpx;
+     background: #e7a9c3;
+     border-radius: 20rpx 20rpx 0 0 ;
+     color: #fff;
+  }
+  .cale_month{
+    width: 760rpx;
+    height: auto;
+    display:flex;
+    flex-direction:row;
+	justify-content:flex-start;
+  }
+  .month{
+    margin-left: 295rpx;
+    text-align: center;
+    font-size: 28rpx;
+    font-weight: 1000;
+    margin-top: 10rpx;
+  }
+  .cale_img1{
+    width: 14rpx;
+    height: 23rpx;
+  }
+  .cale_img2{
+      
+    margin-left: 295rpx;
+    width: 14rpx;
+    height: 23rpx;
+  }
+  .cale_week{
+    display:flex;
+    flex-direction:row;
+	justify-content:flex-start;
+    margin: 32rpx auto 0;
+    width: 720rpx;
+    height: 65rpx;
+    /* background: rgba(103, 32, 116, 0.1); */
+    border-radius: 36rpx;
+    font-size: 26rpx;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 0 38rpx;
+  }
+  .days{
+      margin-right: 38rpx;
+  }
+  .box1 {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25rpx auto 0;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #333333;
+    padding-bottom: 20rpx;
+  }
+  
+  .isbook {
+    background: #e7a9c3;
+  }
+  .isrela {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 24rpx;
+    height: 92rpx;
+  }
+  .book{
+    width: 48rpx;
+    height: 48rpx;
+    border-radius: 50%;
+    text-align: center;
+    line-height:48rpx;
+    color: #FFFFFF;
+    margin-left: 20rpx;
+  }
+  .waitbook{
+    background: rgba(168, 107, 139, 0.25);
+  }
+  .stopbook{
+    background: #D3D3D3;
+  }
+  /* 文本 */
+  .peis_text1{
+    font-size: 18rpx;
+    color: #000000;
+    height: 20rpx;
+    line-height: 20rpx;
+    margin-top: 6rpx;
+    width: 100rpx;
+  }
+  .color1{
+    color: #AF8AB4;
+  }
+  .color2{
+    color: #C7C7C7;
+  }
+  .book_img{
+    width: 20rpx;
+    height: 14rpx;
+    
+  }
+  .book_img1{
+    width: 23rpx;
+    height: 21rpx;
+  }
+  .book_img2{
+    width: 11rpx;
+    height: 15rpx;
+  }
+  
+  /* chosed */
+  .chosed{
+    background: #FFFFFF;
+    box-shadow: 0px 0rpx 6rpx 0px rgba(171, 171, 171, 0.5);
+    border-radius: 7rpx;
+  }
+  /* 进度条 */
+.box {
+  height: 25rpx;
+  overflow: hidden;
+  background-color: #ebeef5;
+  width: 100%;
+  border-radius: 20rpx;
+  margin-top: 25rpx;
+}
+
+.pink_pro {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 72rpx 72rpx;
+  height: 100%;
+  transition: width 0.6s ease;
+  background-color: pink;
+  width: 20%;
+  animation: progres 2s linear infinite;
+  color: #FFFFFF;
+}
+
+@keyframes progres {
+  from {
+    background-position: 72rpx 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+
+.btn1 {
+  width: 200rpx;
+  margin: 40rpx auto;
+  height: 50rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: var(--white);
+}

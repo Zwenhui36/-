@@ -1,0 +1,7 @@
+<!--pages/me/sharefriend/sharefriend.wxml-->
+<view class="img"><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/logo.png?sign=a5b33dc727e3e75df6fa6b83107674e7&t=1653651484" bindload="imageLoad"></image>
+</view>
+
+
+<button class="share_btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >点我生成分享图</button>
+<share-box isCanDraw="{{isCanDraw}}" bind:initData="createShareImage" bind:close="handleClose" />

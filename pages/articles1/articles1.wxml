@@ -1,0 +1,40 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1 title">冬季泡脚有什么好处 如何正确泡脚</view>
+            <view class="weui-article__title">2022-5-24 11:00<text space="ensp">    阅读量：46946</text></view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                        <image class="weui-article__img" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/xinwen2.png?sign=2568fd9330d00ccfdc66fc5b2a6ad362&t=1653369657"  />
+                    <view class="weui-article__p">
+                        <text space="ensp">    冬季到了，如果每天睡前泡脚有利于睡眠，今天小编给大家讲讲冬季泡脚的好处以及泡脚的正确方法，下面一起来看看吧。
+冬季泡脚有什么好处 </text>
+                    <view></view>
+                    <text space="ensp">  1、冬季泡脚可以缓解感冒和头痛，脚部血管扩张可使血液从头部流向脚部，从而减少脑充血缓解头痛。</text>
+                    <view></view>
+                    <text space="ensp">  2、冬季泡脚促进血液循环，经常手脚冰凉的人，泡脚是一个极好的缓解方法。</text>
+                    <view></view>
+                    <text space="ensp">  3、冬季泡脚刺激足部的穴位、反射区和经络。对多种疾病有辅助治疗作用。如体内多寒湿，通过泡脚，可以加速体内排寒。</text>
+                    <view></view>
+                    <text space="ensp">如何正确泡脚</text>
+                    <view></view>
+                    <text space="ensp">  1、桶的选择 桶的选择是关重要的，很多觉得什么桶都行，其实不然。较好呢是选用木桶，木桶比其他材质的桶，保温效果更强，可以使泡脚维持的时间更长。</text>
+                    <view></view>
+                    <text space="ensp">  2、桶的高度 桶的高度也是有要求的，必须选择能够漫过小腿的那种较深的木桶。很多人以为，只需要泡到脚踝就行了，其实是需要到小腿，这样才是有效的。</text>
+                    <view></view>
+                    <text space="ensp">  3、泡脚时长 泡脚呢，不是泡得时间越长越好，次数越多越好，一般呢泡脚时间较好是30分钟~45分钟，然后一次或者隔天一次就够了，这样的时间安排比较合理。</text>
+                    <view></view>
+                    
+                    </view>
+                    
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-footer">
+            <view class="weui-footer__links">
+                <navigator url="../index/index"  open-type="switchTab"class="weui-footer__link" >首页</navigator>
+            </view>
+            <view class="weui-footer__text">Copyright © 2008-2016 wenhui.zheng</view>
+        </view>
+</view>

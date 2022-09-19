@@ -1,0 +1,18 @@
+<!--pages/start/start.wxml-->
+<view class="container">
+  <view class="title" >就医小宝典</view>
+  <view class="content">
+   <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/logo.png?sign=40cffe3f8bd17a492f9dd232920b3650&t=1653659907" class="logo"/>
+        
+    <image class="wave" src="/images/wave.png" mode="aspectFill"></image>
+    <image class="wave wave-bg" src="/images/wave.png" mode="aspectFill"></image>
+   </view>
+   <view class="bd">
+    <view class="smalltitle">给你带来不一样的体验</view>
+    <view class="confirm-btn">
+     <button open-type="getUserInfo" lang="zh_CN" bindtap="jumpindex" class="sart">欢迎使用</button>
+    </view>
+   </view>
+  </view>
+</view>

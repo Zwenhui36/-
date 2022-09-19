@@ -1,0 +1,116 @@
+<view class="fix_btn1" hidden='{{no_scroll}}' bindtap="goTop">
+  <image class="icon2" src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E7%BD%AE%E9%A1%B6.png?sign=0b9685e99a7a75cbbaec6790d4ae3dfb&t=1653648049"></image>
+</view>
+<view class="main">
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="search">
+        <navigator url="../search/search">
+            <view class="search-text">
+                <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E6%90%9C%E7%B4%A2%20(1).png?sign=bae97d961e3c0c801ab6f81f80c3ee90&t=1653645932" class="search-icon"/>
+                <view class="search-con">输入疾病、药品、科普、医生</view>
+            </view>
+        </navigator>
+    </view>
+    <!-- 快速预约 -->
+    <view class="quickyuyue">
+        <view class="topsearch" bindtap="guahao">
+        <view class="flex-row topsearch_box">
+            <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E5%8C%BB%E9%99%A2.png?sign=136957d376d27dcfb11584d1b1404a1b&t=1653646176" class="topsearch_icon" />
+            <view class="topsearch_info">
+            <view class="line_ellipsis">预约挂号</view>
+            <view class="flex-row topsearch_item">
+                <text>三甲号源快速预约</text>
+            </view>
+            </view>
+        </view>
+        </view> 
+        <view style="border-right: 3px solid rgb(236, 236, 236);"></view>
+        <view class="topsearch">
+        <view class="flex-row topsearch_box" bindtap="finddoctor">
+            <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E5%8C%BB%E7%94%9F%E5%9B%A2%E9%98%9F.png?sign=ffca98bd1e9b1630534af3485f37d240&t=1653646189" class="topsearch_icon" />
+            <view class="topsearch_info">
+            <view class="line_ellipsis">日常生活十问</view>
+            <view class="flex-row topsearch_item">
+                <text>今天你做到了吗</text>
+            </view>
+            </view>
+        </view>
+        </view> 
+    </view>
+    
+    <!-- 找科室看病 -->
+    <view class="hr"></view>
+    <view>
+            <view class="head">找科室看病<view class="title">自选科室 专业医生</view></view> 
+    </view>
+    <swiper class="section icons"  autoplay="" interval="" duration="500">
+			<swiper-item wx:for="{{icons}}" wx:for-item="list" wx:key="id">
+				<view class="icon" wx:for="{{list}}" wx:for-item="icon">
+                <navigator url="{{icon.url}}">
+                    <image src="{{icon.img}}" />
+                    <view>
+                        <text>{{icon.name}}</text>
+                    </view>
+                </navigator>
+                    
+                    
+				</view>
+			</swiper-item>
+		</swiper>
+        <!-- 专病咨询 -->
+        <view class="hr"></view>
+        <view class="head">专病咨询<view class="title">省时省心 名医指导</view></view> 
+        <view class="hot_box" bindtap="askdoctor">
+            <view class="flex-row">
+                <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/index1.png?sign=129ce1450bfd9aa72ac57bf33ca26926&t=1653207342" class="floor1_icon" mode="aspectFill" />
+            </view>
+            <view class="flex-row">
+                <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/index2.png?sign=caf80b1f4a57c1c248f2c47c0c1ac2ae&t=1653207356" class="floor2_icon "mode="aspectFill" />
+            </view>
+        </view>
+        <!-- 健康咨询 -->
+        <view class="hr"></view>
+        <view class="head">健康资讯<view class="title">养生之道知多少</view></view>
+        <view class="hot_box" bindtap="article1">
+        <view class="flex-row news_box">
+            <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/xinwen1.png?sign=ef3e3c2d0d7ee7925ed7a78f405e27b4&t=1653222768" class="g_icon" />
+            <view class="news_info">
+            <view class="line_ellipsis">大姨妈腰痛怎么办？妙招助你赶跑经期腰痛！</view>
+            <view class="flex-row news_item">
+                <text>2022-5-22</text>
+            </view>
+            </view>
+        </view>
+        </view> 
+        <view class="hot_box" bindtap="article2">
+        <view class="flex-row news_box">
+            <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/xinwen2.png?sign=b1abfdbbf1ef943ebe2d38ae7472110e&t=1653222989" class="g_icon" />
+            <view class="news_info">
+            <view class="line_ellipsis">冬季泡脚有什么好处 如何正确泡脚</view>
+            <view class="flex-row news_item">
+                <text>2022-5-22</text>
+            </view>
+            </view>
+        </view>
+        </view> 
+        <view class="hot_box" bindtap="article3">
+        <view class="flex-row news_box">
+            <image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/xinwen3.png?sign=61a79e1bb1ede1be2dfdc2ab2a6fb4f3&t=1653224452" class="g_icon" />
+            <view class="news_info">
+            <view class="line_ellipsis">糖友喝粥，不妨加点儿粗粮和蔬菜</view>
+            <view class="flex-row news_item">
+                <text>2022-5-22</text>
+            </view>
+            </view>
+        </view>
+        </view> 
+        <view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 2008-2016 wenhui.zheng</view>
+        </view>
+</view>

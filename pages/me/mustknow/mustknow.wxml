@@ -1,0 +1,20 @@
+<!--pages/cssCase/stepsAnt/index.wxml-->
+<view class="con">
+  <block wx:for="{{list}}" wx:key="list">
+    <view class="flex all">
+      <view class="left">
+        <view>{{item.date}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
+      <view class="right">
+        <!-- 小圆点 -->
+        <view class="circle"></view>
+        <view class="r_box">{{item.content}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 飘落爱心 -->
+<view wx:for="{{left}}" wx:key="index">
+  <text style="left:{{left[index]}}rpx" animation="{{animation[index]}}" class='snow' bindtap="hide" data-index='{{index}}'>♥</text>
+</view>

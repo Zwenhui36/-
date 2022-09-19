@@ -1,0 +1,82 @@
+/* pages/index/guahao/biaoge/biaoge.wxss */
+.all{
+    background-color: rgba(241, 241, 241, 0.877);
+    width: 752rpx;
+    height: 2125rpx;
+    margin-top: -12rpx;
+}
+.biaoge{
+    margin: 15rpx 50rpx;
+    
+}
+.hr{
+    padding-top: 15px;
+}
+.kuang{
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.title{
+    display:flex; flex-direction:row; justify-content:flex-start;
+}
+.xing{
+    color: rgb(255, 59, 59);
+}
+.num1{
+    margin-left: 0rpx;
+    font-size: 35rpx;
+}
+/* 日期 */
+.data{
+    border: 1px solid #dddddd;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.datashuju{
+    margin-left: 140rpx;
+    color:#8a8a8a;
+}
+.jiantou{
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 15rpx;
+}
+/* 单选框 */
+.checkbox {
+    width: 100%;
+    height: 100rpx;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  .checkbox_group {
+    width: 15%;
+    height: 100rpx;
+    line-height: 120rpx;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+  }
+  .checkbox_icon {
+    width: 40rpx;
+    height: 40rpx;
+    display: inline-block;
+  }
+  .checkbox_1 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhElEQVRYR2NkGGDAOMD2M4w6AFsIOACjZT4QK1A5eh4AzUsE4gPI5mJzAEihPJUthxkHMluRkAP+QxVQO31gNRebJaMOGA2B0RAYDYHREBgNgdEQGA2B0RAY8BD4AGwT8tOoUfoQvbWNq1m+gAYtY5DlCcQ0y2nkeezGUrvpTbLjRx0AAPBxMiHEElLrAAAAAElFTkSuQmCC') no-repeat;
+    background-size: cover;
+  }
+  
+  .checkbox_1_selected {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABtElEQVRYR+2WgU3DMBBF2wmACcgGwATABMAGZQJgAsoEwAR0A2ACygTABJQNYAL4r7qLHMcBpY0bIfWkUxzZuf/9fXfOcNCzDXvGH6yawEgbvpPfys/Z/CoJ7ArvJVB8jp0icGAsiyWO51HfHgffb2r8JIcEdiUfNxGYaWJ7CfAvAyKO240GZ/byFhBJKvBtC7s6HhRl9257Grz6SwqkSwJIz7kXBnihJ2qUlpvAg5CODO1ZT9SoWE4CJOG9oaXyYj6ViwDSv8t5YqfySbz7nASmCr5vgHFJZj8COtx1IH2h8Wdq920VIDAJRRsluVIGGFnv0p9Ea4mxcBV4eQJcqeWACfW9Y+9lv7d3J7cVMm+ThGE3Q9JDedlQNB7LLy34h5603VB6L8kKZhsCxJ7KPblmpgQg8UUDOdaGlmxwbQlwtgR2mVGAc6beaxdNDgLEhAS73zAAFPCkq1w0uQgQl92ihJNwrKbkZL6TIwg3FZ977aLJqYDHHmlAdZDhjH+zzhX4A682vSbwfxSgruPyanveTetp0UU42fRbPtGiZf6MUwQAp1LoH6V19ee7sEJrAr0r8AOIV2IhX2D6QQAAAABJRU5ErkJggg==') no-repeat;
+    background-size: cover;
+  }
+  
+  .checkbox_content {
+    float: left;
+    width: 85%;
+    line-height: 100rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  /* 病情 */

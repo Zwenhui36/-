@@ -1,0 +1,83 @@
+
+<view class="amountBg">
+<view class="yonghu">
+</view>
+  <view class="cont">
+    <image class="img" src="{{image}}" bindtap="addtouxiang"></image>
+  </view>
+    <view class="btn_getuserinfo" bindtap="onGetUserInfo">点击获取头像</view>
+  <view class="nav" bindtap="login">></view>
+   
+  
+</view>
+<view class="content">
+    <view class="order">
+        <view class="desc" bindtap="gomessage">
+           <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E6%B6%88%E6%81%AF.png?sign=0c232e61e1267d8136ea4682de9f80a1&t=1653651315" style="width:25px;height:25px;"></image></view>
+           <view>消息</view>
+        </view>
+        <view class="desc" bindtap="gofamily">
+           <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%AE%B6%E5%BA%AD%EF%BC%8C%E5%AE%B6%E5%BA%AD%E6%88%90%E5%91%98%EF%BC%8C%E5%AE%B6%E4%BA%BA%EF%BC%8C%E4%BA%BA%E5%91%98.png?sign=292555ec215ec63f14ed0aa2dc495250&t=1653651330" style="width:25px;height:25px;"></image></view>
+           <view>家庭成员</view>
+        </view>
+        <view class="desc" bindtap="mustknow">
+           <view><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E9%A1%BB%E7%9F%A5.png?sign=cc0d905d47a13bb16cc58ba1d70e19ff&t=1653651344" style="width:25px;height:25px;"></image></view>
+           <view>就医须知</view>
+        </view>
+    </view>
+    <view class="clear"></view>
+ <view class="item">
+<view class="icon"><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E9%A2%84%E7%BA%A6%E8%AE%B0%E5%BD%95.png?sign=0d76bf182748655ab4d0750a5645cb8b&t=1653651356" style="width:25px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>我的预约</view>
+        <view class="remark">1个预约</view>
+    </view>
+    <view class="right" bindtap="reserve"><text class="opr">查看预约</text>></view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+<view class="icon"><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%87%BA%E8%A1%8C.png?sign=dbb6cbc512f8fc72856d073445dd4d3a&t=1653651372" style="width:25px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>出行服务</view>
+    </view>
+    <view class="right" bindtap="getmap"><text class="opr">定位与出行</text>></view>
+  </view>
+  <view class="hr"></view>
+     <view class="item">
+<view class="icon"><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E6%8A%A5%E5%91%8A%E5%8D%95.png?sign=f0a90692668aee706ed5fa0d04263cdb&t=1653651388" style="width:25px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>我的报告单</view>
+    </view>
+    <view class="right" bindtap="getreport"><text class="opr">历史报告单</text>></view>
+  </view>
+  <view class="hr"></view>
+     <view class="item">
+<view class="icon"><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E8%81%94%E7%B3%BB%20(1).png?sign=4790659580275cab7f7af4209792c6e0&t=1653651408" style="width:25px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>分享</view>
+    </view>
+    <view class="right" bindtap="sharetofriend"><text class="opr">邀请好友</text>></view>
+  </view>
+  <view class="hr"></view>
+     <view class="item">
+<view class="icon"><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.png?sign=e7cdc35bcb5d8e8e9d082c64b56c973d&t=1653651422" style="width:23px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>关于我们</view>
+    </view>
+    <view class="right" bindtap="aboutus">></view>
+  </view>
+  <view class="line"></view>
+     <view class="item">
+<view class="icon"><image src="https://636c-cloud1-5g9s6m4xc535a723-1310002932.tcb.qcloud.la/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/%E6%88%91%E7%9A%84-%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.png?sign=c86ea9199ab20e788bf96f4946a84303&t=1653651437" style="width:25px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>版本号：1.0.0</view>
+    </view>
+    <view class="right" bindtap="update"><text class="opr">更新</text>></view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="line"></view>
+<view class="line"></view>
+<view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 2008-2016 wenhui.zheng</view>
+        </view>

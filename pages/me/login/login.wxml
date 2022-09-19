@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class="content">
+    <view class="account">
+        <text class="title">账号</text>
+        <view class="num"><input bindinput="accountInput" placeholder="用户名/邮箱/手机号"
+        placeholder-style="color:#999999;" /></view>
+    </view>
+    <view class="hr"></view>
+        <view class="account">
+            <text class="title">密码</text>
+            <view class="num"><input bindinput="pwdBlur" placeholder="请输入密码" password
+        placeholder-style="color:#999999;" /></view>
+        </view>
+    <view class="hr"></view>
+    <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" plain="true" bindtap="login">登录</button>
+    <view class="operate">
+        <view><navigator url="../mobileregister/mobileregister">手机号快速注册</navigator></view>
+        <view><navigator url="../login/register/register">普通注册</navigator></view>
+    </view>
+</view>

@@ -1,0 +1,111 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/doctor/quickask/quickask",
+    "pages/index/index",
+    "pages/dailyask/dailyask",
+    "pages/me/me",
+    "pages/wenzhang/wenzhang",
+    "pages/doctor/doctor",
+    "pages/doctor/quickask/chatroom/chatroom",
+    "pages/me/route-plan/route-plan",
+    "pages/me/map/map",
+    "pages/me/message/message",
+    "pages/me/mustknow/mustknow",
+    "pages/me/family/family",
+    "pages/me/mobileregister/mobileregister",
+    "pages/me/login/register/register",
+    "pages/articles2/articles2",
+    "pages/articles1/articles1",
+    "pages/articles/articles",
+    "pages/me/addtouxiang/addtouxiang",
+    "pages/doctor/doctordetail1/doctordetail1",
+    "pages/doctor/doctordetail/doctordetail",
+    "pages/knowledge/knowledge",
+    "pages/index/guahao/biaoge/biaoge",
+    "pages/index/guahao/guahao",
+    "pages/community/community",
+    "pages/search/search",
+    "pages/type/type",
+    "pages/share/share",
+    "pages/camera/camera",
+    "pages/me/sharefriend/sharefriend",
+    "pages/me/report/report",
+    "pages/me/reserve/reserve",
+    "pages/me/aboutus/aboutus",
+    "pages/me/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "就医小宝典",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab/首页.png",
+        "selectedIconPath": "images/tab/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/doctor/doctor",
+        "text": "问诊寻医",
+        "iconPath": "images/tab/医生.png",
+        "selectedIconPath": "images/tab/医生 (1).png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "病理知识",
+        "iconPath": "images/tab/书籍.png",
+        "selectedIconPath": "images/tab/书籍（1).png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "images/tab/社区服务-社区服务.png",
+        "selectedIconPath": "images/tab/社区服务-社区服务 (1).png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "images/tab/我的.png",
+        "selectedIconPath": "images/tab/我的 (1).png"
+      }
+    ]
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.19",
+      "provider": "wx50b5593e81dd937a"
+    },
+    "myPlugin": {
+      "version": "1.1.15",
+      "provider": "wx8c631f7e9f2465e1"
+    },
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序定位"
+      }
+    },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio", "location"],
+  "navigateToMiniProgramAppIdList": [
+    "wx0e6ed4f51db9d078",
+    "wx28946c42f87776eb",
+    "wx8c631f7e9f2465e1",
+    "wx2f9b06c1de1ccfca"
+]
+}

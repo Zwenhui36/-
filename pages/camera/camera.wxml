@@ -1,0 +1,35 @@
+<!--pages/camera/camera.wxml-->
+<!--pages/share/share.wxml-->
+<!--pages/camera/camera.wxml-->
+<view>
+    <view class="loginTitle">
+        <view class="{{currentTab==0?'select':'default'}}" data-current='0' bindtap="switchNav">日常拍摄</view>
+        <view class="{{currentTab==1?'select':'default'}}" data-current='1' bindtap="switchNav">预览照片</view>
+        <view class="{{currentTab==2?'select':'default'}}" data-current='2' bindtap="switchNav">预览视频</view>
+    </view>
+    <view class="hr"></view>
+    <swiper current='{{currentTab}}' style="height:{{winHeight}}px">
+    <swiper-item>
+        <view style="text-align: center;">
+            <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 200px;"></camera>
+            <view class="btn-area">
+                <button type="default" plain="true" bindtap="takePhoto">拍照</button>
+            </view>
+            <view class="btn-area">
+                <button type="default" plain="true" bindtap="startRecord">开始录像</button>
+            </view>
+            <view class="btn-area">
+                <button type="default" plain="true" bindtap="stopRecord">结束录像</button>
+            </view>
+        </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="preview-tips">拍摄的照片</view>
+            <image wx:if="{{src}}" mode="widthFix" src="{{src}}"></image>
+    </swiper-item>
+    <swiper-item>
+        <view class="preview-tips">拍摄的视频</view>
+            <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
+    </swiper-item>
+    </swiper>
+</view>

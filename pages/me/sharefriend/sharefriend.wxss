@@ -1,0 +1,36 @@
+/* pages/me/sharefriend/sharefriend.wxss */
+/* pages/subPack/canvasPoster/index.wxss */
+page{
+    background-color: rgb(255, 161, 192,0.2);
+  }
+.img{
+    display:flex;
+    height: 300px;                  
+    justify-content: center;        
+    align-items:center;
+}
+.img image{
+    width:500rpx;
+  height:400rpx;
+}
+  .share_btn{
+      width: 600rpx;
+      height: 88rpx;
+      background: #2698da;
+      color: #FFF;
+      border-radius: 44rpx;
+      font-size: 32rpx;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-top: 700rpx;
+    
+  }
+.container{
+    width: 400rpx;
+    height: 300rpx;
+    margin: auto;
+}

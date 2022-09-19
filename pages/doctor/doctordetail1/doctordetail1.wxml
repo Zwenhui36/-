@@ -1,0 +1,50 @@
+<!--pages/doctor/doctordetail/doctordetail.wxml-->
+<view>
+    <view data-text="皮肤科" class="title">皮肤科</view>
+    <view>
+  <view class="screen screen1">
+    <block wx:for="{{contacts}}" wx:key="id" wx:for-item="contact">
+      <view class="contact" bindtap="showNext" data-idx="{{index}}">
+        <share-element class="avatar" key="avatar" duration="{{duration}}" transform="{{transformIdx === index}}">
+          <image mode="widthFix" src="{{contact.img}}"></image>
+        </share-element>
+        <share-element duration="{{duration}}" class="name" key="name" transform="{{transformIdx === index}}">
+          {{contact.name}}
+        </share-element>
+        
+        <view class="list">
+          <view>科室: {{contact.keshi}}</view>
+          <view>职位：{{contact.zhiwei}}</view>
+          <view>手机号: {{contact.phone}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<page-container show="{{show}}" overlay="{{overlay}}" close-on-slide-down duration="{{duration}}" position="{{position}}" bindbeforeenter="onBeforeEnter" bindenter="onEnter" bindafterenter="onAfterEnter" bindbeforeleave="onBeforeLeave" bindleave="onLeave" bindafterleave="onAfterLeave" bindclickoverlay="onClickOverlay">
+  <view class="screen screen2">
+    <view class="contact">
+      <share-element class="avatar ava_pa" duration="{{duration}}" key="avatar" transform>
+        <image mode="widthFix" src="{{contact.img}}" />
+      </share-element>
+      <share-element class="name" key="name" duration="{{duration}}" transform>
+        {{contact.name}}
+      </share-element>
+      <view class="paragraph {{show ? 'enter' : ''}}">
+        个人介绍：
+        <view></view>
+        皮肤病专业，山东大学齐鲁儿童医院（济南市儿童医院）皮肤科主任。专业擅长：各种儿童皮肤病，湿疹、特应性皮炎、荨麻疹、传染性软疣、扁平疣、白癜风、银屑病、脱发、斑秃、痤疮、新生儿皮肤病、鱼鳞病、血管瘤、鲜红斑痣、咖啡斑、太田痣、雀斑、皮肤色素沉着等。
+        <view></view>
+        关于皮肤科知识普及：
+        <view></view>
+        脱发病人，阴虚或有虚热，应少食或忌食辣椒、酒、牛羊肉、荔枝等。可适当多食豆类、蛋类、鱼类以及各种新鲜蔬菜。
+        气血两虚者，可多食鸡、鱼、红枣、桂圆肉、猪肉等，但也要荤素搭配，食量由少渐多，以免"虚不受补”，汤粥类较好
+
+      </view>
+      <button class="screen2-button" bindtap="showPrev" hidden="{{!show}}" hover-class="none">确定</button>
+    </view>
+  </view>
+</page-container>
+</view>
+
+
